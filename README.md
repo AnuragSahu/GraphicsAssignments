@@ -39,7 +39,8 @@ cd Assignment1/build
 cmake .. && make all
 ./graphics_asgn1
 ```
-
+ - These are some of the screenshots <br>
+ ![Alt text](Assignment1/ScreenShots/screen_rec.gif?raw=true "Game Start")
 # Graphics Assignment 2
 - Basic Controls -
 1. increase speed in front direction -> W
@@ -72,4 +73,6 @@ cd Assignment2/build
 cmake .. && make all
 ./grapics_asgn1
 ```
- 
+
+ - These are some of the screenshots <br>
+ ![Alt text](Assignment1/ScreenShots/screen_rec.gif?raw=true "Game Start")
