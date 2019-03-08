@@ -74,5 +74,5 @@ cmake .. && make all
 ./grapics_asgn1
 ```
 
- - These are some of the screenshots
+ - These are some of the screenshots <br>
  ![Alt text](Assignment1/ScreenShots/screen_rec.gif?raw=true "Game Start")
