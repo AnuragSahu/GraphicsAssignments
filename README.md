@@ -75,4 +75,4 @@ cmake .. && make all
 ```
 
  - These are some of the screenshots <br>
- ![Alt text](Assignment1/ScreenShots/screen_rec.gif?raw=true "Game Start")
+ ![Alt text](Assignment2/ScreenShots/screen_rec.gif?raw=true "Game Start")
