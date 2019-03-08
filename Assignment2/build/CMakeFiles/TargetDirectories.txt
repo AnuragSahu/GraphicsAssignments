@@ -1,0 +1,3 @@
+/home/anurag/Study/Graphics/Assignment2/start/build/CMakeFiles/rebuild_cache.dir
+/home/anurag/Study/Graphics/Assignment2/start/build/CMakeFiles/graphics_asgn1.dir
+/home/anurag/Study/Graphics/Assignment2/start/build/CMakeFiles/edit_cache.dir
