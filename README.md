@@ -39,7 +39,7 @@ cd Assignment1/build
 cmake .. && make all
 ./graphics_asgn1
 ```
- - These are some of the screenshots
+ - These are some of the screenshots <br>
  ![Alt text](Assignment1/ScreenShots/screen_rec.gif?raw=true "Game Start")
 # Graphics Assignment 2
 - Basic Controls -
