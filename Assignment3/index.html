@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Anurag Sahu | InfiRunner </title>
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+		<script type="text/javascript" src="js/three.min.js"></script>
+        <!-- <script type="text/javascript" src="js/game.js"></script> -->
+        
+         
+		<script id="vertexShader" type="x-shader/x-vertex">
+			attribute float gray;
+        	varying float v_gray;
+			void main(){
+				v_gray = gray;
+				gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0);
+			}
+		</script>
+		
+		<script id="fragmentShader" type="x-shader/x-fragment">
+        	uniform vec3 color;
+        	varying float v_gray;
+        	void main() {
+        		gl_FragColor = vec4(color, 1.0);
+        	}
+		</script>
+		<script id="fragmentShader_gray" type="x-shader/x-fragment">
+        	uniform vec3 color;
+        	void main() {
+        		float gray = dot(color.rgb, vec3(0.299, 0.587, 0.114));
+				gl_FragColor = vec4(vec3(gray), 1.0);
+        	}
+		</script>
+		<script type="text/javascript" src="js/game_failed_tryagain_1.js"></script>
+
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="panel">
+			<div class= "game-title">
+				<div class="title">InfiRunner</div>
+				<!-- <div class="byline">by <a target="_blank" href="https://wanfungchui.github.io/">wan fung chui</a></div>  -->
+			</div>
+			<div class="game-title">
+				<label>Score</label>
+				<p id="score">0</p>
+			</div>
+			<table id="controls">
+			  	<tr>
+			    	<td>Up:</td>
+			    	<td>Jump</td>
+			  	</tr>
+			  	<tr>
+			    	<td>Left:</td>
+			    	<td>Left lane switch</td>
+			  	</tr>
+			  	<tr>
+			    	<td>Right:</td>
+			    	<td>Right lane switch</td>
+			  	</tr>
+			  	<tr>
+			    	<td>g:</td>
+			    	<td>Grayscale</td>
+			  	</tr>
+			  	<tr>
+			    	<td>f:</td>
+			    	<td>Flicker Walls</td>
+			  	</tr>
+			  	<tr>
+			    	<td>p:</td>
+			    	<td>Pause</td>
+			  	</tr>
+			  	
+			</table>
+			<!-- <table id="ranks"></table> -->
+			<div class="animate-flicker" id="variable-content">Press any button to begin</div>
+		</div>
+		<div id="world"></div>
+		<div id="world1"></div>
+		<div id="brightworld"></div>
+		<!-- <canvas class="glslCanvas"  -->
+			
+		</div>
+	</body>
+</html>

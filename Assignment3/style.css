@@ -1,0 +1,180 @@
+* {
+    margin:0;
+    padding:0;
+    font-family:'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+html, body {
+  width:100%;
+  height:100%;
+}
+
+html, body {
+    background: linear-gradient(#badbe4, #aaf7e1);
+}
+
+#world {
+  position: absolute;
+  width:100%;
+  height: 100%;
+  right:0;
+  overflow: hidden;
+  //--webkit-filter: brightness(150%);
+  //filter: brightness(150%);
+}
+
+#world1 {
+  position: absolute;
+  width:100%;
+  height: 100%;
+  right:0;
+  overflow: hidden;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#brightworld {
+  position: absolute;
+  width:100%;
+  height: 100%;
+  right:0;
+  overflow: hidden;
+  --webkit-filter: brightness(110%);
+  filter: brightness(110%);
+}
+
+.panel {
+    z-index: 50;  
+    position:absolute;
+    top:0;
+    left:0;
+    padding: 2vw 3vw;
+    width: 25%;
+    height: 90%;
+    opacity: 0.7;
+    //box-sizing: border-box;
+    background-color: white;
+}
+
+.game-title {
+    z-index:100;
+    position:relative;
+    text-align:center;
+    font-size: 2vw;
+
+}
+
+.game-title .title {
+    font-family: 'Playfair Display', serif;
+    font-weight:700;
+    font-size:5vw;
+}
+
+.game-title .byline {
+    font-family: 'Playfair Display', serif;
+    text-transform:uppercase;
+    color:#333;
+    letter-spacing:0.2vw;
+    font-size:0.8vw;
+    font-weight:600;
+    margin-top:0.5vw;
+}
+
+a {
+    font-family: 'Playfair Display', serif;
+    letter-spacing:0.2vw;
+    font-weight:600;
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 2vw;
+    border: 1px solid black;
+}
+
+td {
+    letter-spacing:0.1vw;
+    font-size:0.7vw;
+    text-transform:uppercase;
+    font-weight:400;
+}
+
+td:first-child {
+    width: 30%;
+    text-align: right;
+    padding-right: 0.5vw;
+}
+
+td:nth-child(2) {
+    width: 70%;
+    text-align: left;
+    padding-left: 0.5vw;
+}
+
+.stat {
+    margin-top: 2vw;
+    text-align:center;
+}
+
+.stat p {
+    width:100%;
+    text-align:center;
+    font-family:'Playfair Display';
+    font-size:2vw;
+}
+
+.stat label {
+    text-align:center;
+    text-transform:uppercase;
+    letter-spacing:0.25vw;
+    font-size:0.8vw;
+    width:100%;
+    float:left;
+}
+
+#variable-content {
+    margin-top:2vw;
+    letter-spacing:0.1vw;
+    text-transform:uppercase;
+    font-size:1.5vw;
+    font-weight:100;
+    text-align:center;
+    line-height:150%;
+    color:red;
+}
+
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+
+.animate-flicker {
+    z-index:100;
+    position:relative;
+    text-align:center;
+   -webkit-animation: flickerAnimation 1.5s infinite;
+   -moz-animation: flickerAnimation 1.5s infinite;
+   -o-animation: flickerAnimation 1.5s infinite;
+    animation: flickerAnimation 1.5s infinite;
+}
